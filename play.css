@@ -201,7 +201,7 @@ input[placeholder] {
   top: 110%;
   left: 44.5%;
   transform: rotate(0);
-  animation: frogjumping 5s 1s cubic-bezier(0.51, 0.53, 0.1, 0.75) infinite;
+  animation: frogjumping 5s 0s cubic-bezier(0.51, 0.53, 0.1, 0.75) infinite;
   z-index: 5;
 }
 

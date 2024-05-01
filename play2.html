@@ -3,9 +3,535 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="play2.css" />
     <title>Document</title>
   </head>
   <body>
-    Having fun on play2 html.
+    <div class="container">
+      <div class="heros">
+        <img id="fisherman" src="Img/ai-generated-8681046_1280.png" />
+        <img id="goat" src="Img/goat-7656304_640.png" />
+        <img id="wolf" src="Img/wolf-6541879_640.png" />
+        <img id="cabbage" src="Img/cabbage-559887_640.png" />
+      </div>
+      <div class="list list1">
+        <p id="list1text">
+          I have a huge problem. I was commissioned to bring a wolf, a goat and
+          a cabbage across the river in my boat. But I still have other cargo on
+          board and can transport a maximum of 2 items at once. For obvious
+          reasons, I cannot leave either the wolf with the goat or the goat with
+          the cabbage unattended on a bank. I have no idea how I can get
+          everyone to the other side with as few crossings as possible.<br /><br />
+          <span class="help">
+            Please help me. When you have a solution, write it on the right side
+            of the paper.</span
+          ><br /><br /><em
+            ><small
+              >This is a puzzle from the 9th century. As a modern person, it
+              should be easy for you to solve. Right?</small
+            >
+          </em>
+        </p>
+      </div>
+      <div class="list list2">
+        <p id="list2text">Use checkbox for your solution!</p>
+        <ul class="checkinglist checking">
+          <li>
+            <h4>A - 1st trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check1"
+              type="checkbox"
+              name="check"
+              value="check1"
+            />
+            <label for="check1"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check2"
+              type="checkbox"
+              name="check"
+              value="check2"
+            />
+            <label for="check2"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check3"
+              type="checkbox"
+              name="check"
+              value="check3"
+            />
+            <label for="check3"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>B - 1st trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check4"
+              type="checkbox"
+              name="check"
+              value="check4"
+            />
+            <label for="check4"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check5"
+              type="checkbox"
+              name="check"
+              value="check5"
+            />
+            <label for="check5"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check6"
+              type="checkbox"
+              name="check"
+              value="check6"
+            />
+            <label for="check6"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>C - 2nd trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check7"
+              type="checkbox"
+              name="check"
+              value="check7"
+            />
+            <label for="check7"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check8"
+              type="checkbox"
+              name="check"
+              value="check8"
+            />
+            <label for="check8"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check9"
+              type="checkbox"
+              name="check"
+              value="check9"
+            />
+            <label for="check9"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>D - 2nd trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check10"
+              type="checkbox"
+              name="check"
+              value="check10"
+            />
+            <label for="check10"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check11"
+              type="checkbox"
+              name="check"
+              value="check11"
+            />
+            <label for="check11"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check12"
+              type="checkbox"
+              name="check"
+              value="check12"
+            />
+            <label for="check12"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>E - 3rd trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check13"
+              type="checkbox"
+              name="check"
+              value="check13"
+            />
+            <label for="check13"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check14"
+              type="checkbox"
+              name="check"
+              value="check14"
+            />
+            <label for="check14"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check15"
+              type="checkbox"
+              name="check"
+              value="check15"
+            />
+            <label for="check15"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>F - 3rd trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check16"
+              type="checkbox"
+              name="check"
+              value="check16"
+            />
+            <label for="check16"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check17"
+              type="checkbox"
+              name="check"
+              value="check17"
+            />
+            <label for="check17"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check18"
+              type="checkbox"
+              name="check"
+              value="check18"
+            />
+            <label for="check18"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>G - 4th trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check19"
+              type="checkbox"
+              name="check"
+              value="check19"
+            />
+            <label for="check19"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check20"
+              type="checkbox"
+              name="check"
+              value="check20"
+            />
+            <label for="check20"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check21"
+              type="checkbox"
+              name="check"
+              value="check21"
+            />
+            <label for="check21"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <li>
+            <br />
+            <a
+              href="#"
+              id="getSolution"
+              onclick="showSolution()"
+              onmouseover="changeText()"
+              >I tried my very best and need a possible solution</a
+            >
+          </li>
+        </ul>
+        <!--SOLUTION-->
+        <ul class="checkinglist solution">
+          <li>
+            <h4>A - 1st trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check1"
+              type="checkbox"
+              name="check"
+              value="check1"
+              checked
+            />
+            <label for="check1"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check2"
+              type="checkbox"
+              name="check"
+              value="check2"
+            />
+            <label for="check2"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check3"
+              type="checkbox"
+              name="check"
+              value="check3"
+            />
+            <label for="check3"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>B - 1st trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check4"
+              type="checkbox"
+              name="check"
+              value="check4"
+            />
+            <label for="check4"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check5"
+              type="checkbox"
+              name="check"
+              value="check5"
+            />
+            <label for="check5"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check6"
+              type="checkbox"
+              name="check"
+              value="check6"
+            />
+            <label for="check6"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>C - 2nd trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check7"
+              type="checkbox"
+              name="check"
+              value="check7"
+            />
+            <label for="check7"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check8"
+              type="checkbox"
+              name="check"
+              value="check8"
+              checked
+            />
+            <label for="check8"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check9"
+              type="checkbox"
+              name="check"
+              value="check9"
+            />
+            <label for="check9"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>D - 2nd trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check10"
+              type="checkbox"
+              name="check"
+              value="check10"
+              checked
+            />
+            <label for="check10"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check11"
+              type="checkbox"
+              name="check"
+              value="check11"
+            />
+            <label for="check11"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check12"
+              type="checkbox"
+              name="check"
+              value="check12"
+            />
+            <label for="check12"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>E - 3rd trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check13"
+              type="checkbox"
+              name="check"
+              value="check13"
+            />
+            <label for="check13"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check14"
+              type="checkbox"
+              name="check"
+              value="check14"
+            />
+            <label for="check14"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check15"
+              type="checkbox"
+              name="check"
+              value="check15"
+              checked
+            />
+            <label for="check15"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>F - 3rd trip back from island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check16"
+              type="checkbox"
+              name="check"
+              value="check16"
+            />
+            <label for="check16"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check17"
+              type="checkbox"
+              name="check"
+              value="check17"
+            />
+            <label for="check17"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check18"
+              type="checkbox"
+              name="check"
+              value="check18"
+            />
+            <label for="check18"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+          <!--next trip-->
+          <li>
+            <h4>G - 4th trip to island:</h4>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check19"
+              type="checkbox"
+              name="check"
+              value="check19"
+              checked
+            />
+            <label for="check19"> </label>
+            <a href="#">GOAT</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check20"
+              type="checkbox"
+              name="check"
+              value="check20"
+            />
+            <label for="check20"></label>
+            <a href="#">WOLF</a>
+          </li>
+          <li>
+            <input type="checkbox" /><input
+              id="check21"
+              type="checkbox"
+              name="check"
+              value="check21"
+            />
+            <label for="check21"></label>
+            <a href="#">CABBAGE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a id="nextPage" href="play3.html">Click here for next adventure</a>
+    <script src="play2.js"></script>
   </body>
 </html>
