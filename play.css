@@ -236,7 +236,7 @@ input[placeholder] {
 #ask {
   position: absolute;
   top: 40%;
-  left: 5%;
+  left: 7%;
   font-size: 4rem;
   color: rgb(145, 202, 58);
   text-shadow: 0 2px 3px #747474, 1px 3px 4px #222, 0 8px 3px #474747,
@@ -245,7 +245,7 @@ input[placeholder] {
 }
 
 #marginAsk {
-  margin-left: 35rem;
+  margin-left: 30rem;
 }
 
 .dust {
