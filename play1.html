@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="play.css" />
+    <title>Play1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumping">
+        <img src="img/frog.png" id="frog" alt="frog" />
+        <h2 id="ask">
+          Please help me <span id="marginAsk">to press the ball!</span>
+        </h2>
+        <div class="dust" id="dust1"></div>
+        <div class="dust" id="dust2"></div>
+        <div class="dust" id="dust3"></div>
+        <div class="dust" id="dust4"></div>
+      </div>
+      <div class="tableau">
+        <div class="horizontal">
+          <div class="frame1"></div>
+          <div class="frame2"></div>
+        </div>
+
+        <br /><br /><br />
+        <h1>Who do you want to be on the playground?</h1>
+        <br />
+        <h3>First move pic into the empty box.</h3>
+
+        <div class="choosepic">
+          <div class="box">
+            <div
+              class="image"
+              id="img1"
+              draggable="true"
+              ondragstart="drag(event)"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="image"
+              id="img2"
+              draggable="true"
+              ondragstart="drag(event)"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="image"
+              id="img3"
+              draggable="true"
+              ondragstart="drag(event)"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="image"
+              id="img4"
+              draggable="true"
+              ondragstart="drag(event)"
+            ></div>
+          </div>
+          <div class="box">
+            <div
+              class="image"
+              id="img5"
+              draggable="true"
+              ondragstart="drag(event)"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="box"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+          id="userImg"
+        ></div>
+        <div class="nick">
+          <label>Enter a nick-name and press ENTER:</label><br />
+          <input
+            id="input"
+            type="text"
+            placeholder="Type your nick-name und click Enter"
+          />
+          <div id="welcome"></div>
+          <a id="starting" href="play2.html">click here to start playing</a>
+        </div>
+        <div class="elements"></div>
+        <div class="line"></div>
+        <div class="knob"></div>
+      </div>
+    </div>
+    <script src="play.js"></script>
+  </body>
+</html>

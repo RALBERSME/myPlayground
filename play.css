@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+:root {
+  --c: #ffc700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(pink, #ffc700);
+  text-align: center;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100vh;
+}
+
+.tableau {
+  position: absolute;
+  top: -780px;
+  left: 0;
+  height: 80vh;
+  width: 100%;
+  background-color: rgb(243, 230, 230);
+  border: 1px solid black;
+  border-radius: 5%;
+  animation: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 10;
+}
+.line {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  height: 80px;
+  border-left: 5px solid black;
+}
+
+.knob {
+  position: absolute;
+  top: 105%;
+  left: 46.3%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 65% 15%,
+    white 0.5px,
+    pink 3%,
+    black 60%,
+    #ffc700 100%
+  );
+}
+@keyframes rollingTableau {
+  0% {
+    top: -780px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+
+/*Drag & Drop*/
+.choosepic {
+  margin: 3.75%;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+
+.box {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#userImg {
+  position: absolute;
+  top: 55%;
+  left: 25%;
+  height: 290px;
+  width: 450px;
+  border-radius: 5px;
+  border: 5px solid #333;
+  border-style: double;
+  box-shadow: 0 0 0 5px pink, 0 0 0 10px #ffc700;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+#img1 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/03/19/15/49/woman-8643502_640.png");
+}
+#img2 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/11/12/46/border-collie-8501579_640.jpg");
+}
+#img3 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/18/13/08/ai-generated-8704313_640.png");
+}
+#img4 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/20/12/45/girl-775349_640.jpg");
+}
+#img5 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/12/18/31/male-2634974_640.jpg");
+}
+
+.nick {
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  font-size: 1.5rem;
+}
+input {
+  text-align: center;
+  width: 290px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 5%;
+  background-color: rgba(255, 199, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+input[placeholder] {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+#welcome {
+  position: absolute;
+  top: 120%;
+  left: 7%;
+  width: 270px;
+  font-size: 1.75rem;
+  animation: blink 5s 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: black;
+  }
+  40% {
+    color: #ffc700;
+  }
+  50% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    color: black;
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+    color: #ffc700;
+  }
+  90% {
+    color: black;
+  }
+}
+
+#starting {
+  position: absolute;
+  top: 100%;
+  left: 120%;
+  text-decoration: none;
+  color: #cfa203;
+  text-shadow: 1px 1px 1px black;
+  display: none;
+}
+#starting:hover {
+  color: black;
+}
+/*frog part */
+.jumping {
+  position: absolute;
+  height: 50vh;
+  width: 100%;
+  top: 0;
+}
+#frog {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  top: 110%;
+  left: 44.5%;
+  transform: rotate(0);
+  animation: frogjumping 5s 1s cubic-bezier(0.51, 0.53, 0.1, 0.75) infinite;
+  z-index: 5;
+}
+
+@keyframes frogjumping {
+  0% {
+    top: 110%;
+    transform: rotate(0);
+  }
+  25% {
+    top: 35%;
+    transform: rotate(25deg);
+  }
+  50% {
+    top: 100%;
+    transform: rotate(0);
+  }
+  75% {
+    top: 35%;
+    transform: rotate(-25deg);
+  }
+}
+@keyframes disappearfrog {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 35%;
+    transform: rotate(-25deg);
+  }
+}
+#ask {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  font-size: 4rem;
+  color: rgb(145, 202, 58);
+  text-shadow: 0 2px 3px #747474, 1px 3px 4px #222, 0 8px 3px #474747,
+    5px 11px 4px #f1c61a, 0 14px 4px #565656, 0 17px 4px #343434,
+    0 20px 4px #171717;
+}
+
+#marginAsk {
+  margin-left: 35rem;
+}
+
+.dust {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: brown;
+  transform: skew(15deg, 25deg);
+  margin-top: 44%;
+  left: 47.5%;
+  z-index: 0;
+  opacity: 0;
+}
+.dust:before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: brown;
+  transform: skew(-30deg, -50deg);
+  margin-top: 43%;
+  left: 45.5%;
+  z-index: 0;
+  opacity: 0;
+  animation: dust2 2.5s 2.5s ease-out infinite;
+}
+
+#dust1 {
+  animation: dust1 2.5s 2.5s ease-out infinite;
+}
+#dust3 {
+  animation: dust1 2.5s 3.5s ease-out infinite;
+}
+
+@keyframes dust1 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(-120px) scale(1.5);
+    opacity: 0;
+  }
+}
+#dust2 {
+  animation: dust2 2.5s 2.8s ease-out infinite;
+}
+
+#dust4 {
+  animation: dust2 2.5s 3.9s ease-out infinite;
+}
+
+@keyframes dust2 {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.25);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(-200px) translateX(120px) scale(1.5);
+    opacity: 0;
+  }
+}
+/* frame */
+.horizontal {
+  position: absolute;
+  height: 72vh;
+  width: 97.5%;
+  top: 5%;
+  left: 1%;
+  background-image: linear-gradient(
+    rgba(238, 130, 238, 0.3),
+    rgb(246, 211, 217)
+  );
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+.frame1 {
+  position: absolute;
+  top: 5px;
+  border-left: 3px dotted var(--c);
+  height: 95%;
+}
+.frame1::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  right: 5px;
+  bottom: 0px;
+  border: 8px dotted pink;
+  border-left: 6px solid var(--c);
+}
+.frame1::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  right: 5px;
+  bottom: 0px;
+  border: 8px dotted pink;
+  border-right: 6px solid var(--c);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px;
+}
+.frame2 {
+  position: absolute;
+  top: 5px;
+  left: 99.5%;
+  border-left: 3px dotted var(--c);
+  height: 95%;
+}
+.frame2::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  right: 5px;
+  bottom: 0px;
+  border: 8px dotted pink;
+  border-left: 6px solid var(--c);
+}
+.frame2::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  right: 5px;
+  bottom: 0px;
+  border: 8px dotted pink;
+  border-right: 6px solid var(--c);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
