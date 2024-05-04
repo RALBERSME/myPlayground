@@ -10,8 +10,6 @@ body {
 }
 .container {
   height: 100vh;
-
-  margin: 10px;
   display: flex;
 }
 .action {
