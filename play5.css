@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top, #bdd7df 0%, #005bea 100%);
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+
+  margin: 10px;
+  display: flex;
+}
+.action {
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.guess {
+  width: 20%;
+}
+#cloud1 {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  top: 0%;
+  left: 35%;
+  animation: cloudMove 7s 0s ease-in infinite;
+}
+#cloud2 {
+  position: absolute;
+  width: 250px;
+  height: 160px;
+  top: 0%;
+  left: 26%;
+  animation: cloudMove 8s 0s ease-in infinite;
+}
+#cloud3 {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  top: -5%;
+  left: 20%;
+  animation: cloudMove 6s 0s ease-in infinite;
+}
+#cloud4 {
+  position: absolute;
+  width: 650px;
+  height: 220px;
+  top: 40%;
+  left: 30%;
+  z-index: 2;
+}
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-800px) translateY(300px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px) translateY(-300px);
+    opacity: 0;
+  }
+}
+#plane {
+  position: absolute;
+  width: 450px;
+  height: 200px;
+  top: 5%;
+  left: 40%;
+  animation: movePlane 5s 0s ease-in-out infinite;
+}
+
+@keyframes movePlane {
+  0% {
+    transform: rotate(-20deg);
+  }
+  30% {
+    transform: rotate(-18deg);
+  }
+  40% {
+    transform: rotate(-22deg);
+  }
+  50% {
+    transform: rotate(-19deg);
+  }
+  60% {
+    transform: rotate(-21deg);
+  }
+  80% {
+    transform: rotate(-17deg);
+  }
+  90% {
+    transform: rotate(-19deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+#country {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  height: 400px;
+  width: 1000px;
+  overflow: hidden;
+}
+.globe {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 450px;
+  height: 200px;
+  animation: flying 3s linear infinite;
+}
+#map {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  width: 300px;
+  height: 300px;
+  background-image: url("Img/monaco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: 2;
+}
+@keyframes flying {
+  0% {
+    top: 65%;
+    left: 0%;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    top: -55%;
+    left: 35%;
+    opacity: 0;
+  }
+}
+
+#globe {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 450px;
+  height: 450px;
+}
+
+/* question part */
+
+.guess {
+  margin: 5%;
+  font-family: fantasy;
+  font-size: 1.75rem;
+  color: white;
+  text-align: center;
+}
+
+#blink {
+  color: white;
+  transform: scale(1);
+  animation: blink 9s 0s ease-in infinite;
+  display: block;
+}
+
+@keyframes blink {
+  2% {
+    color: orange;
+    transform: scale(1);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45%,
+  55%,
+  65%,
+  75%,
+  85%,
+  95% {
+    opacity: 1;
+    color: white;
+    transform: scale(1);
+    transform: translateY(0px) scale(1);
+  }
+  6%,
+  16%,
+  26%,
+  36%,
+  46%,
+  56%,
+  66%,
+  76%,
+  86%,
+  96% {
+    opacity: 0;
+  }
+  10%,
+  20%,
+  30%,
+  40%,
+  50%,
+  60%,
+  70%,
+  80%,
+  90%,
+  100% {
+    color: yellow;
+    transform: translateY(15px) scale(1.5);
+    opacity: 1;
+  }
+}
+
+ul {
+  margin-top: 30px;
+  list-style: none;
+  font-family: fantasy;
+  font-size: 1.25rem;
+  text-align: center;
+}
+li {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 0, 0.7);
+  color: black;
+  margin-top: 10px;
+  cursor: pointer;
+}
