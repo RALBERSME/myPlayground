@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.hider {
+  position: absolute;
+  margin: 7.5%;
+  top: 0vh;
+  height: 80%;
+  width: 800%;
+  background: url("Img/grübeln.png") no-repeat;
+  background-size: cover/center;
+}
+.hide {
+  display: none;
+}
+.whiteBorder {
+  margin: 3%;
+  height: 95vh;
+  background: url("https://cdn.pixabay.com/photo/2016/08/23/16/23/child-1614897_640.jpg")
+    no-repeat;
+  background-size: 100% 90%;
+  overflow: hidden;
+}
+.half {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  margin-top: 10%;
+}
+
+.container {
+  margin-left: 5%;
+  height: 50vh;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.viewport {
+  margin-top: 12%;
+  margin-left: 20%;
+  width: 42vw;
+  height: 21vw;
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  perspective: 1300px;
+}
+
+.viewport::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 20%;
+  background-color: #000;
+  z-index: -1;
+  top: 140%;
+  left: -10%;
+  filter: blur(50px);
+}
+
+.cube {
+  margin-top: 15vh;
+  margin-left: 5%;
+  width: 50%;
+  height: 50%;
+  transform-style: preserve-3d;
+  position: relative;
+  animation: turnaround 5s 0s linear infinite;
+  color: white;
+}
+
+@keyframes turnaround {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.ground {
+  position: absolute;
+  background-color: orangered;
+  width: 50%;
+  height: 100%;
+  top: 50%;
+  left: 25%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 40px dotted rgb(120, 120, 120);
+  transform: translateZ(-5vw) rotateX(90deg) translateY(60%) translateX(-25%);
+}
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.face2 {
+  width: 55%;
+  height: 100%;
+  position: absolute;
+}
+.front {
+  transform: translateZ(21vw);
+  background: url("https://cdn.pixabay.com/photo/2020/06/22/21/50/magirus-deutz-5330676_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.front2 {
+  transform: translateZ(16.5vw) translateX(21.5vw) rotateY(47deg);
+  background: url("https://cdn.pixabay.com/photo/2024/04/26/20/08/octopus-8722580_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+.back {
+  transform: translateZ(-21vw) rotateY(180deg);
+  background: url("https://cdn.pixabay.com/photo/2024/04/30/00/18/cat-8729074_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+.back2 {
+  transform: translateZ(-21vw) rotateY(180deg);
+  transform: translateZ(-16.5vw) translateX(-11vw) rotateY(227deg);
+  background: url("https://cdn.pixabay.com/photo/2014/09/15/21/01/teddy-bear-447422_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.left {
+  transform: translateX(-21vw) rotateY(-90deg);
+  background: url("https://cdn.pixabay.com/photo/2024/04/26/19/33/octopus-8722525_640.png")
+    no-repeat 80% 0;
+  background-size: cover;
+}
+.left2 {
+  transform: translateX(-21vw) rotateY(-90deg);
+  transform: translateZ(16.5vw) translateX(-11vw) rotateY(-43deg);
+  background: url("https://cdn.pixabay.com/photo/2014/12/22/00/00/pig-576570_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+
+.right {
+  transform: translateX(21vw) rotateY(90deg);
+  background: url("https://cdn.pixabay.com/photo/2014/09/15/21/01/teddy-bear-447422_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+.right2 {
+  transform: translateX(21vw) rotateY(90deg);
+  transform: translateZ(-16.5vw) translateX(21.5vw) rotateY(137deg);
+  background: url("https://cdn.pixabay.com/photo/2020/01/26/14/59/kitten-4794761_640.png")
+    no-repeat 50% 0;
+  background-size: cover;
+}
+.top {
+  height: 42vw;
+  background-color: #111;
+  transform: translateY(-21vw) rotateX(90deg);
+}
+
+.bottom {
+  height: 42vw;
+  background-color: #111;
+  transform: translateY(-14vw) rotateX(-90deg);
+}
+
+.swing {
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  top: -140%;
+}
+#swing1 {
+  left: 115%;
+}
+
+#swing2 {
+  right: 100%;
+  transform: rotateY(170deg) translateZ(333px);
+}
+
+#swing3 {
+  left: 100%;
+  transform: translateZ(365px) rotateY(120deg) rotateZ(-27deg);
+}
+
+/* QUIZ */
+.quiz {
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  font-family: fantasy;
+  font-size: 1.6rem;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 25%;
+  height: 53%;
+  padding: 15px;
+  border-radius: 5%;
+  text-align: center;
+}
+
+.btnQuiz {
+  margin-top: 30px;
+  background-color: rgba(245, 222, 179, 0.5);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 5%;
+  padding: 10px;
+  width: 100%;
+  font-family: fantasy;
+  font-size: 1.5rem;
+  border: 2px black dashed;
+  z-index: 10;
+  animation: flicker 3s 50s linear infinite;
+  cursor: pointer;
+}
+.btnQuiz:hover {
+  color: rgba(245, 222, 179, 0.5);
+  background-color: rgb(222, 217, 217);
+}
+@keyframes flicker {
+  0% {
+    box-shadow: 7.5px 20px 7.5px rgba(171, 171, 171, 0.5);
+  }
+  20%,
+  60% {
+    transform: translateX(5px) translateY(10px);
+    box-shadow: 5px 10px 5px rgba(128, 128, 128, 0.5);
+  }
+  40%,
+  80%,
+  100% {
+    transform: translateX(0px) translateY(0px);
+    box-shadow: 7.5px 20px 7.5px rgba(171, 171, 171, 0.5);
+  }
+}
+.solution {
+  position: absolute;
+  top: 65%;
+  left: 42%;
+  font-size: 1rem;
+  opacity: 0;
+  color: orangered;
+  /* animation: showSolution 5s 1s ease-in-out infinite;*/
+}
+
+@keyframes showSolution {
+  0% {
+    top: 65%;
+    left: 42%;
+    font-size: 1rem;
+    opacity: 0;
+  }
+  100% {
+    top: 5%;
+    left: 28%;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7.5px;
+    border-radius: 5%;
+    opacity: 1;
+    text-shadow: 1px 2px 2px rgb(248, 248, 199);
+  }
+}
+
+/* next page */
+
+#nextPage {
+  position: absolute;
+  top: 82%;
+  left: 77%;
+  background-color: rgb(220, 219, 219);
+  color: rgb(72, 93, 122);
+  padding: 12px 20px;
+  border: 3px solid rgb(38, 49, 65);
+  box-shadow: 0px 0px 5px black;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#nextPage:after {
+  content: "👍";
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  right: -20px;
+  transition: 0.25s;
+  font-size: 2rem;
+}
+
+#nextPage:hover {
+  padding-right: 60px;
+  color: #f9cc00;
+  text-shadow: 2px 2px 18px black;
+  background-color: rgb(209, 208, 208);
+  border: 2px solid rgb(38, 49, 65);
+  text-decoration: underline double rgb(134, 134, 134);
+}
+
+#nextPage:hover:after {
+  opacity: 1;
+  right: 5px;
+}

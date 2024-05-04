@@ -3,9 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="play3.css" />
     <title>Document</title>
   </head>
   <body>
-    THIS IS PAGE PLAY 2 HTML
+    <div class="hider"></div>
+
+    <div class="quiz">
+      <p class="question">
+        You drive the car and maintain a constant speed. There is a slope on
+        your left. There's a huge fire truck driving on your right, keeping the
+        same speed as you.<br />
+        A pig that's clearly bigger than your car is galloping in front of you
+        and you can't pass. Behind you a helicopter is pursuing you at ground
+        level. The pig and the helicopter have exactly your speed.<br /><br />
+        <u> Question:</u><br />
+        What can you do to <br />safely escape this situation???
+      </p>
+      <button class="btnQuiz" onclick="provideSolution()">
+        Please show solution
+      </button>
+    </div>
+    <p class="solution">
+      It is very easy to escape the situation safely:<br />
+      Get up and get off the children's carousel.
+    </p>
+    <div class="whiteBorder hide">
+      <div class="half">
+        <div class="container">
+          <div class="viewport">
+            <div class="cube">
+              <div class="face front"></div>
+              <div class="face2 front2"></div>
+              <div class="face back"></div>
+              <div class="face2 back2"></div>
+              <div class="face left"></div>
+              <div class="face2 left2"></div>
+              <div class="face right"></div>
+              <div class="face2 right2"></div>
+              <div class="ground"></div>
+              <img
+                src="https://cdn.pixabay.com/photo/2020/05/19/15/41/chlid-play-5191372_640.png"
+                id="swing1"
+                class="swing"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2020/05/19/15/41/chlid-play-5191372_640.png"
+                id="swing2"
+                class="swing"
+              />
+              <img
+                src="https://cdn.pixabay.com/photo/2020/05/19/15/41/chlid-play-5191372_640.png"
+                id="swing3"
+                class="swing"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="nextPage" class="hide" href="play4.html"
+      >Click here for next adventure</a
+    >
+    <script src="play3.js"></script>
   </body>
 </html>

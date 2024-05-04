@@ -69,6 +69,7 @@ body {
 }
 .solution {
   display: none;
+  left: 270px;
 }
 li {
   list-style: none;
