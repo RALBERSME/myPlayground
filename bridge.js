@@ -1,7 +1,9 @@
 function checkEntry(event) {
   var input = document.getElementById("input").value;
   const feedback = document.getElementById("feedback");
-  if (input === "60") {
+  if (!input) {
+    feedback.textContent = "Please enter a number!";
+  } else if (input === "60") {
     feedback.textContent = `You wrote ${input} and that is correct!
     Alice and Ben cross the bridge (10min.),
     Alice returns with lamp (5min.),
