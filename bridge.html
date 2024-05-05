@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bridge.css" />
+    <title>Bridge</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="people" onclick="showQuiz()">
+        <img
+          id="child"
+          src="Img/child-2758831_640.jpg"
+          height="350px"
+          width="350px"
+        />
+        <div id="overlay"></div>
+        <div id="help">
+          Help us!
+          <br /><small>click <br />for details</small>
+        </div>
+      </div>
+      <div id="quiz" class="hide">
+        We (Alice, Ben, Carla and Denis), have to cross the dark bridge. This is
+        not possible without a lantern. We only have one lantern, but the light
+        only lasts so far that two people can cross the bridge at the same time.
+        Our lantern won't burn much longer. Therefore we have to cross the
+        bridge as quickly as possible. But we are not the same speed. Alice
+        takes 5 minutes, Ben 10 minutes, Carla 20 minutes and Denis 25 minutes.
+        Tell us the fastest way to get everyone across the bridge. Please!
+        <br /><small
+          ><em
+            >This is a riddle from the 9th century,<br />
+            see S. X. Levmores und Elizabeth Early Cooks</em
+          ></small
+        ><br /><br />
+        <form>
+          <label><u>Enter here the necessary time in minutes:</u></label
+          ><br />
+          <input id="input" />
+          <input
+            id="submit"
+            type="button"
+            onclick="checkEntry()"
+            value="Submit"
+          />
+        </form>
+        <br />
+        <h4 id="feedback"></h4>
+        <a id="continue" href="#" onclick="window.location.href='next.html'"
+          >Click to continue</a
+        >
+      </div>
+    </div>
+    <script src="bridge.js"></script>
+  </body>
+</html>

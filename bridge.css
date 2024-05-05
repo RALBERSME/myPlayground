@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("Img/ai-generated-8457649_1920.png");
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+.people {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+#child {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-radius: 80%;
+  border: 10px solid #bf4c47;
+}
+#help {
+  position: absolute;
+  top: 37%;
+  right: 11.2%;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(245, 170, 31);
+  text-align: center;
+  z-index: 2;
+  animation: blink 3s 0s linear infinite;
+}
+@keyframes blink {
+  0% {
+    color: rgb(245, 170, 31);
+  }
+  25% {
+    color: orangered;
+  }
+  50% {
+    color: rgb(53, 150, 53);
+  }
+  75% {
+    color: rgb(94, 154, 195);
+  }
+  100% {
+    color: rgb(245, 170, 31);
+  }
+}
+
+#overlay {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 5%;
+  right: 5%;
+  border-radius: 50%;
+  background-color: rgba(255, 118, 98, 0.3);
+}
+
+#quiz {
+  position: absolute;
+  top: 3%;
+  width: 40%;
+  color: wheat;
+  padding: 2%;
+  font-size: 1.75rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5%;
+}
+#input {
+  padding: 5px;
+  border: 3px solid #bf4c47;
+  background-color: rgba(191, 76, 71, 0.4);
+  border-radius: 5%;
+  color: white;
+  width: 60px;
+  font-size: 1.5rem;
+}
+#submit {
+  padding: 5px;
+  border: 3px solid #bf4c47;
+  background-color: rgba(191, 76, 71, 0.9);
+  border-radius: 5%;
+  color: white;
+  width: 480px;
+  font-size: 1.5rem;
+}
+#feedback {
+  font-size: 1.4rem;
+}
+.hide {
+  display: none;
+}
+#continue {
+  cursor: pointer;
+  transition: all 2s 0s;
+  text-decoration: none;
+  color: rgba(191, 76, 71, 0.9);
+}
+#continue:hover {
+  color: rgb(245, 170, 31);
+}
