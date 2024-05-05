@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #eeecdd;
+  overflow: hidden;
+}
+.upperPart {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url("Img/ai-generated-8407089_1920.jpg");
+  background-position: center/cover;
+  background-repeat: no-repeat;
+  font-family: "Briem Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  color: rgb(247, 247, 139);
+  text-align: center;
+}
+
+.lowerPart {
+  position: relative;
+  height: 20vh;
+  width: 100%;
+}
+
+.chairs {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  top: -150%;
+  left: 10%;
+  transform: rotate(2deg);
+}
+
+.couch {
+  position: absolute;
+  top: -110%;
+  right: 4%;
+}
+
+#couch {
+  width: 690px;
+  height: 550px;
+  transform: rotate(5deg) rotateY(-10deg);
+}
+
+#tree {
+  position: absolute;
+  top: -150%;
+  right: -3%;
+  width: 350px;
+  height: 600px;
+}
+#greens {
+  position: absolute;
+  top: -140%;
+  left: -3%;
+  width: 350px;
+  height: 500px;
+}
+#carpet {
+  position: absolute;
+  top: -110%;
+  left: 12%;
+  width: 650px;
+  height: 500px;
+  z-index: -1;
+}
+#dame2 {
+  position: absolute;
+  top: -150%;
+  left: 32%;
+  width: 280px;
+  height: 380px;
+}
+#dame {
+  position: absolute;
+  top: -190%;
+  left: 69%;
+  width: 460px;
+  height: 670px;
+}
+#brunnen {
+  position: absolute;
+  top: -190%;
+  left: 42%;
+  width: 600px;
+  height: 400px;
+}
+/* game cta part */
+#cta {
+  position: relative;
+  padding-top: 2%;
+}
+
+.box {
+  width: 150px;
+  height: 180px;
+  text-align: center;
+  justify-content: top;
+  z-index: 10;
+}
+a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: wheat;
+  cursor: pointer;
+}
+#bingo {
+  position: absolute;
+  top: 519.1%;
+  left: 47%;
+}
+#bingo a {
+  color: rgb(249, 249, 176);
+}
+#cards {
+  position: absolute;
+  top: 530%;
+  left: 25%;
+}
+#cards a {
+  color: black;
+}
+
+#dice {
+  position: absolute;
+  top: 549%;
+  left: 38.2%;
+  text-align: end;
+}
+#dice a {
+  color: black;
+}
+
+#labyrinth {
+  position: absolute;
+  top: 500%;
+  left: 60.4%;
+  line-height: 0.5;
+}
+#labyrinth a {
+  color: black;
+}
+#roulette {
+  position: absolute;
+  top: 532%;
+  left: 86%;
+}
+#roulette a {
+  color: black;
+}
+#russianRoulette {
+  position: absolute;
+  top: 532%;
+  left: 7%;
+  line-height: 0.5;
+}
