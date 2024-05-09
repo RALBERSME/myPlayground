@@ -10,5 +10,5 @@ function provideSolution() {
   solution.style.animation = "showSolution 3s 1s ease-in-out forwards";
   setTimeout(() => {
     nextPage.classList.remove("hide");
-  }, 6000);
+  }, 4500);
 }

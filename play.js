@@ -33,6 +33,7 @@ inp.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     user = inp.value;
     localStorage.setItem("nickname", user);
+    localStorage.setItem("userCount", 900);
     welcome.textContent = `Welcome on the playground 
     ${user.toUpperCase()} !!`;
     starting.style.display = "block";

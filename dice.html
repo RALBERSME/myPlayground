@@ -3,9 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="dice.css" />
     <title>Dice</title>
   </head>
   <body>
-    I am on dice html
+    <p class="rules">
+      A game will cost you 100 DiceCoins (DC). <br />Click start game. Then
+      throw first and second dice. The result of the second dice will be
+      subtracted from the result of the first dice. The difference multiplied
+      with 100 is the outcome DC. It will be booked on your account. If your
+      account is zero or less, you have to leave the casino.
+    </p>
+    <div>
+      <button class="back" onclick="window.location.href='play7.html'">
+        Click to return to casino hall
+      </button>
+    </div>
+    <div class="separate">
+      <div class="dices">
+        <div class="actions">
+          <div id="throw1" class="throw-button">
+            <button onclick="throwDice1()" disabled>Throw first dice!</button>
+            <span id="output1"></span>
+          </div>
+          <div id="throw2" class="throw-button">
+            <button onclick="throwDice2()" disabled>Throw second dice!</button
+            ><span id="output2"></span>
+          </div>
+
+          <div class="throw-button">
+            <p id="outcome">Outcome in DC</p>
+            <span id="diff" class="hide"></span>
+          </div>
+          <div class="userCount">
+            <p id="userCount">Your account is DC</p>
+            <span id="amount" class="hide"></span>
+          </div>
+          <div class="startGame">
+            <button onclick="startGame()" id="startGame">
+              Click to start game
+            </button>
+          </div>
+        </div>
+        <div id="dice1" class="dice dice-one">
+          <div id="dice-one-side-one" class="side one">
+            <div class="point one-1"></div>
+          </div>
+          <div id="dice-one-side-two" class="side two">
+            <div class="point two-1"></div>
+            <div class="point two-2"></div>
+          </div>
+          <div id="dice-one-side-three" class="side three">
+            <div class="point three-1"></div>
+            <div class="pointthree-2"></div>
+            <div class="point three-3"></div>
+          </div>
+          <div id="dice-one-side-four" class="side four">
+            <div class="point four-1"></div>
+            <div class="point four-2"></div>
+            <div class="point four-3"></div>
+            <div class="point four-4"></div>
+          </div>
+          <div id="dice-one-side-five" class="side five">
+            <div class="point five-1"></div>
+            <div class="point five-2"></div>
+            <div class="point five-3"></div>
+            <div class="point five-4"></div>
+            <div class="point five-5"></div>
+          </div>
+          <div id="dice-one-side-six" class="side six">
+            <div class="point six-1"></div>
+            <div class="point six-2"></div>
+            <div class="point six-3"></div>
+            <div class="point six-4"></div>
+            <div class="point six-5"></div>
+            <div class="point six-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dices">
+        <div id="dice2" class="dice dice-two">
+          <div id="dice-two-side-one" class="side one">
+            <div class="point one-1" value="1"></div>
+          </div>
+          <div id="dice-two-side-two" class="side two">
+            <div class="point two-1" value="2"></div>
+            <div class="point two-2" value="2"></div>
+          </div>
+          <div id="dice-two-side-three" class="side three">
+            <div class="point three-1" value="2"></div>
+            <div class="point three-2" value="2"></div>
+            <div class="point three-3" value="2"></div>
+          </div>
+          <div id="dice-two-side-four" class="side four">
+            <div class="point four-1" value="2"></div>
+            <div class="point four-2" value="2"></div>
+            <div class="point four-3" value="2"></div>
+            <div class="point four-4" value="2"></div>
+          </div>
+          <div id="dice-two-side-five" class="side five">
+            <div class="point five-1" value="2"></div>
+            <div class="point five-2" value="2"></div>
+            <div class="point five-3" value="2"></div>
+            <div class="point five-4" value="2"></div>
+            <div class="point five-5" value="2"></div>
+          </div>
+          <div id="dice-two-side-six" class="side six">
+            <div class="point six-1"></div>
+            <div class="point six-2"></div>
+            <div class="point six-3"></div>
+            <div class="point six-4"></div>
+            <div class="point six-5"></div>
+            <div class="point six-6"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dices">
+        <div id="dice3" class="dice dice-three">
+          <div id="dice-three-side-one" class="side one">
+            <div class="point one-1"></div>
+          </div>
+          <div id="dice-three-side-two" class="side two">
+            <div class="point two-1"></div>
+            <div class="point two-2"></div>
+          </div>
+          <div id="dice-three-side-three" class="side three">
+            <div class="point three-1"></div>
+            <div class="pointthree-2"></div>
+            <div class="point three-3"></div>
+          </div>
+          <div id="dice-three-side-four" class="side four">
+            <div class="point four-1"></div>
+            <div class="point four-2"></div>
+            <div class="point four-3"></div>
+            <div class="point four-4"></div>
+          </div>
+          <div id="dice-three-side-five" class="side five">
+            <div class="point five-1"></div>
+            <div class="point five-2"></div>
+            <div class="point five-3"></div>
+            <div class="point five-4"></div>
+            <div class="point five-5"></div>
+          </div>
+          <div id="dice-three-side-six" class="side six">
+            <div class="point six-1"></div>
+            <div class="point six-2"></div>
+            <div class="point six-3"></div>
+            <div class="point six-4"></div>
+            <div class="point six-5"></div>
+            <div class="point six-6"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dice.js"></script>
   </body>
 </html>

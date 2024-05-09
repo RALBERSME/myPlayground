@@ -71,7 +71,7 @@ body {
   top: -110%;
   left: 12%;
   width: 650px;
-  height: 500px;
+  height: 490px;
   z-index: -1;
 }
 #dame2 {
@@ -94,6 +94,16 @@ body {
   left: 42%;
   width: 600px;
   height: 400px;
+}
+#rules {
+  position: absolute;
+  top: 53.2%;
+  left: 16%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+  width: 45%;
+  text-align: center;
 }
 /* game cta part */
 #cta {
