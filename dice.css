@@ -73,10 +73,7 @@ button:hover {
   transition: 0.3s;
   text-align: center;
 }
-#startGame {
-  color: rgb(238, 238, 141);
-  box-shadow: 1px 3px rgb(242, 242, 170);
-}
+
 .back {
   position: absolute;
   top: 15%;

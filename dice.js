@@ -38,8 +38,8 @@ function throwDice2() {
 }
 
 function startGame() {
-  document.getElementById("throw1").disabled = false;
-  document.getElementById("throw2").disabled = false;
+  document.getElementById("throw1btn").classList.remove("hide");
+  document.getElementById("throw2btn").classList.remove("hide");
   let userCount = Number(localStorage.getItem("userCount"));
   let userCountAfterStartPremium = userCount - 100;
   localStorage.setItem("userCount", userCountAfterStartPremium);
