@@ -21,8 +21,6 @@ function throwDice1() {
   return firstValue;
 }
 function throwDice2() {
-  document.getElementById("throw1").disabled = false;
-  document.getElementById("throw2").disabled = false;
   let randomDiceFace = Math.floor(Math.random() * 6 + 1);
   output2.innerHTML = diceFaces[randomDiceFace - 1];
   secondValue = randomDiceFace;
@@ -40,6 +38,8 @@ function throwDice2() {
 }
 
 function startGame() {
+  document.getElementById("throw1").disabled = false;
+  document.getElementById("throw2").disabled = false;
   let userCount = Number(localStorage.getItem("userCount"));
   let userCountAfterStartPremium = userCount - 100;
   localStorage.setItem("userCount", userCountAfterStartPremium);
