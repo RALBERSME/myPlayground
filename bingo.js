@@ -49,6 +49,7 @@ function startGame() {
 
 function leaveCasino(newAmount) {
   if (newAmount < 0) {
+    document.querySelector(".outcome").style.opacity = 1;
     diff.classList.remove("hide");
     diff.style.color = "red";
     diff.style.width = "180px";
