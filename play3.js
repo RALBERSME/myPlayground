@@ -4,6 +4,7 @@ const quiz = document.querySelector(".quiz");
 const solution = document.querySelector(".solution");
 const nextPage = document.getElementById("nextPage");
 function provideSolution() {
+  new Audio("Music/carousel.mp3").play();
   hider.classList.add("hide");
   whiteBorder.classList.remove("hide");
   quiz.style.opacity = 0;

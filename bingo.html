@@ -3,9 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bingo.css" />
     <title>Bingo</title>
   </head>
   <body>
-    BINGO HTML
+    <div class="upperPart">
+      <img id="seagull" src="Img/seagull-1643082_640.png" />
+    </div>
+    <div class="lowerPart">
+      <img
+        id="beach"
+        width="100%"
+        height="100%"
+        src="Img/holiday-4138980_1280.png"
+      />
+    </div>
+    <img id="shit" class="hide" src="Img/soil-576296_640.png" />
+    <div id="inputForm">
+      <p id="rules">
+        It costs 300 BingoCoin (BC) to start the game. You can guess one field
+        per game.If your guess is correct you get 2000 BC. If your account is
+        less than zero you have to leave the casino.<br /><br />
+        Where does the seagull`s shit land? Click on the field you expect to
+        turn it yellow then click the <em>"check if you are right"</em> button.
+        If you get it right the field turns green.
+      </p>
+      <p id="winMessage" class="hide">You win!!!</p>
+      <p id="compensation" class="hide">
+        Sorry, shit on the board. <br />How disgusting! <br />You get 500 BC
+        compensation.
+      </p>
+      <button id="goback" onclick="window.location.href='play7.html'">
+        Back to casino hall
+      </button>
+      <div class="overlay hide"></div>
+      <div class="row1">
+        <span class="field" id="field1">
+          parasol left <br /><span class="num">1</span>
+        </span>
+
+        <span class="field" id="field2"
+          >ball <br /><span class="num">2</span></span
+        >
+        <span class="field" id="field3"
+          >parasol right<br />
+          <span class="num">3</span></span
+        >
+      </div>
+      <div class="row2">
+        <span class="field" id="field4"
+          >towel left<br />
+          <span class="num">4</span></span
+        >
+        <span class="field" id="field5"
+          >bag <br /><span class="num">5</span></span
+        >
+        <span class="field" id="field6"
+          >towel right <br /><span class="num">6</span>
+        </span>
+      </div>
+      <div class="row3">
+        <span class="field" id="field7"
+          >shoes left <br /><span class="num">7</span></span
+        >
+        <span class="field" id="field8"
+          >beach<br />
+          <span class="num">8</span></span
+        >
+        <span class="field" id="field9"
+          >shoes right <br />
+          <span class="num">9</span></span
+        >
+      </div>
+      <div class="outcome">
+        <p id="outcome">Outcome in BC</p>
+        <span id="diff" class="hide"></span>
+      </div>
+      <div class="userCount">
+        <p id="userCount">Your account is BC</p>
+        <span id="amount" class="hide"></span>
+      </div>
+      <div class="startGame">
+        <button onclick="startGame()" id="startGame">
+          Click to check if you are right.
+        </button>
+      </div>
+    </div>
+    <script src="bingo.js"></script>
   </body>
 </html>

@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(rgb(106, 180, 229), rgb(128, 191, 199));
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.upperPart {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+}
+#inputForm {
+  position: relative;
+}
+#seagull {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 200px;
+  animation: seagullFly 11s 0s linear infinite;
+}
+@keyframes seagullFly {
+  0% {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+
+  25% {
+    transform: rotate(0deg) translateX(120px) translateY(150px);
+  }
+  60% {
+    transform: rotate(5deg) translateX(1600px) translateY(-150px);
+  }
+  75% {
+    transform: rotate(5deg) translateX(1400px) translateY(30px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+}
+.lowerPart {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+#shit {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 68%;
+  left: 68%;
+  border: 5px dotted red;
+  padding: 7.5px;
+  border-radius: 50%;
+  animation: shitAnimation 3s 0s ease infinite;
+  z-index: 20;
+}
+@keyframes shitAnimation {
+  0% {
+    border: 3px dotted red;
+  }
+  20%,
+  30%,
+  40%,
+  50% {
+    border: 5px dotted orangered;
+  }
+  25%,
+  35%,
+  45%,
+  55%,
+  60% {
+    border: 3px dotted orange;
+  }
+  65% {
+    border: 5px dotted orangered;
+  }
+  70% {
+    border: 3px dotted red;
+  }
+  75% {
+    border: 5px dotted orangered;
+  }
+  100% {
+    border: 3px dotted orange;
+  }
+}
+
+.hide {
+  display: none;
+}
+#inputForm {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  top: 5%;
+  left: 2%;
+}
+#rules {
+  width: 85%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 7.5%;
+}
+
+.field {
+  display: inline-block;
+  padding: 10px;
+  padding-top: 40px;
+  width: 130px;
+  height: 130px;
+  color: wheat;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.num {
+  border-radius: 50%;
+  font-size: 1rem;
+}
+#winMessage {
+  position: absolute;
+  top: 33%;
+  left: 55%;
+  color: green;
+  padding: 20px;
+  font-size: 3rem;
+}
+#compensation {
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  color: orange;
+  padding: 20px;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.outcome,
+.userCount,
+#startGame {
+  position: relative;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: wheat;
+  background-color: black;
+  width: 200px;
+  margin-bottom: 5px;
+  border: 2px solid wheat;
+  border-radius: 5%;
+  text-align: center;
+}
+.outcome {
+  opacity: 0;
+}
+#startGame {
+  cursor: pointer;
+}
+#startGame:hover,
+#goback:hover {
+  color: black;
+  background-color: wheat;
+  width: 250px;
+  border: 2px solid black;
+}
+#goback {
+  position: absolute;
+  top: 90%;
+  left: 80%;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: wheat;
+  background-color: black;
+  width: 200px;
+  margin-bottom: 5px;
+  border: 2px solid wheat;
+  border-radius: 5%;
+  text-align: center;
+  cursor: pointer;
+}
+#diff {
+  position: absolute;
+  top: 0%;
+  left: 120%;
+  padding: 9.9px;
+  font-size: 1.2rem;
+  color: wheat;
+  background-color: black;
+  width: 200px;
+  margin-bottom: 5px;
+  border: 2px solid wheat;
+  border-radius: 5%;
+  text-align: center;
+}
+#amount {
+  position: absolute;
+  top: 4.3%;
+  left: 120%;
+  padding: 9.9px;
+  font-size: 1.2rem;
+  color: wheat;
+  background-color: black;
+  width: 200px;
+  margin-bottom: 5px;
+  border: 2px solid wheat;
+  border-radius: 5%;
+  text-align: center;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(64, 224, 208, 0.7);
+  width: 400px;
+  height: 400px;
+  z-index: 30;
+}

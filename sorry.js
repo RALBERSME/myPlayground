@@ -6,6 +6,7 @@ const btn = document.getElementById("btn");
 const drop1 = document.getElementById("drop1");
 const drop2 = document.getElementById("drop2");
 
+new Audio("Music/crying.mp3").play();
 setTimeout(() => {
   giraffe1.classList.add("disappear");
   drop1.classList.add("hide");

@@ -4,6 +4,7 @@ const frog = document.getElementById("frog");
 elem.onclick = () => {
   tableau.style.animation = "rollingTableau 6s 1s linear forwards";
   frog.style.animation = "disappearfrog 1.8s 0s linear forwards";
+  new Audio("Music/jump.mp3").play();
 };
 
 //drag & drop
