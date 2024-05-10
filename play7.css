@@ -163,11 +163,12 @@ a {
 }
 #roulette {
   position: absolute;
-  top: 532%;
+  top: 533.5%;
   left: 86%;
 }
 #roulette a {
   color: black;
+  color: rgb(249, 249, 176);
 }
 #russianRoulette {
   position: absolute;

@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roulette.css" />
     <title>Roulette</title>
   </head>
   <body>
-    I am on roulette html
+    <input type="button" value="start" style="float: left" id="spin" />
+    <canvas id="canvas" width="2300" height="2300"></canvas>
+    <div id="inside"></div>
+    <div class="counter hid">
+      <p>Your current budget:</p>
+      <span id="userCountOutput"></span>
+    </div>
+    <div class="rules">
+      It costs 1000 Roulette Coins (RC) to join the game. Press the start button
+      and wait for the outcome. <br />If your budget is less than zero you have
+      to leave the casino. If you have not won coins in other games you
+      certainly do not have the starting money!
+    </div>
+    <button id="goback" onclick="window.location.href='play7.html'">
+      Back to casino hall
+    </button>
+    <script src="roulette.js"></script>
   </body>
 </html>
