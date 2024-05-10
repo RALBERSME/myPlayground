@@ -131,6 +131,7 @@ drawRouletteWheel();
 /*user Counter */
 function startGame() {
   document.querySelector(".counter").classList.remove("hide");
+  new Audio("Music/wheel.mp3").play();
   manageCount(-1000);
 }
 
