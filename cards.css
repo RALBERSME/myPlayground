@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  color: #dfc47d;
+}
+
+#overlayTop {
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/17/13/33/skeleton-3234017_640.png");
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-color: rgb(43, 43, 113);
+  z-index: 5;
+  /* animation: rotateUp 5s 0s linear forwards;
+  animation: none; */
+}
+
+@keyframes rotateUp {
+  0% {
+    transform-origin: top;
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform-origin: top;
+    transform: rotateX(-90deg);
+  }
+}
+.btn {
+  position: absolute;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: blue;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  border: 10px solid white;
+  box-shadow: 5px 5px 5px #dfc47d;
+  color: #dfc47d;
+  text-align: center;
+  cursor: pointer;
+}
+#btn1 {
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  z-index: 5;
+}
+#btn2 {
+  position: absolute;
+  top: 80%;
+  left: 65%;
+  z-index: 5;
+  cursor: pointer;
+}
+#overlayBottom {
+  position: absolute;
+  top: 50%;
+  height: 50vh;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2018/12/12/10/21/cognac-3870510_640.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  z-index: 2;
+}
+
+@keyframes rotateDown {
+  0% {
+    transform-origin: bottom;
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+  }
+}
+#concept {
+  padding: 20%;
+  padding-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#problem {
+  position: absolute;
+  top: -20%;
+  left: 15%;
+  height: 100vh;
+  width: 80%;
+  padding: 20%;
+  padding-left: 5px;
+}
+#solutionOverlay {
+  position: absolute;
+  top: 62%;
+  left: 30%;
+  width: 60%;
+  height: 25%;
+  background-color: #dfc47d;
+  border-radius: 5%;
+}
+#evaluateBtn {
+  text-align: center;
+  padding-top: 55px;
+  color: #dfc47d;
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#evaluateBtn:hover {
+  background-color: #dfc47d;
+  color: black;
+  border: 10px solid black;
+  font-size: 1.65rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#feedbackSolution {
+  position: absolute;
+  padding: 5px;
+  top: -190%;
+  left: 110%;
+  width: 20%;
+  height: 350%;
+  background-color: #dfc47d;
+  color: #000;
+  border-radius: 5%;
+  border: 2px solid black;
+}
+#fazit {
+  position: absolute;
+  padding: 5px;
+  top: 15%;
+  right: 5%;
+  width: 20%;
+  height: 7.5%;
+  background-color: #dfc47d;
+  text-align: center;
+  color: #000;
+  border-radius: 5%;
+  border: 2px solid black;
+}
+#task {
+  position: absolute;
+  top: 2%;
+  left: 17%;
+  padding: 10px;
+  padding-right: 50px;
+  color: black;
+  text-align: left;
+}
+#details {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  left: 17%;
+  width: 60%;
+  color: black;
+  text-align: center;
+}
+#playcards {
+  padding: 30px;
+  padding-top: 50px;
+}
+.lettersAll {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+.letters {
+  top: 0%;
+  left: 10%;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 90px;
+}
+.lettersAllSolution {
+  position: absolute;
+  top: 80%;
+  left: 18.5%;
+  display: flex;
+  gap: 200px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 2.5rem;
+}
+.lettersSolution {
+  top: 0%;
+  left: 10%;
+  padding: 10px 15px;
+  text-align: center;
+  background-color: black;
+  border-radius: 50%;
+  margin-top: 90px;
+}
+#lipstick {
+  position: absolute;
+  top: 6%;
+  left: 2%;
+}
+#lila {
+  position: absolute;
+  top: 26%;
+  left: 3%;
+  transform: rotate(45deg);
+}
+#teddy {
+  position: absolute;
+  top: 41%;
+  left: 2.5%;
+  transform: rotate(40deg);
+}
+#dirt {
+  position: absolute;
+  top: 59%;
+  left: 2.5%;
+  transform: rotate(40deg);
+}
+#note {
+  position: absolute;
+  top: 71%;
+  left: 2.5%;
+  transform: rotate(40deg);
+}
+/* drag & drop game */
+.choosepic {
+  margin: 3.75%;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+}
+
+.box {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.userImg {
+  height: 200px;
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid black double;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#solution {
+  position: absolute;
+  display: flex;
+  gap: 100px;
+  top: 65%;
+  left: 17%;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+#img1 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/03/19/15/49/woman-8643502_640.png");
+}
+#img2 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/01/11/12/46/border-collie-8501579_640.jpg");
+}
+#img3 {
+  background-image: url("https://cdn.pixabay.com/photo/2024/04/18/13/08/ai-generated-8704313_640.png");
+}
+#img4 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/05/20/12/45/girl-775349_640.jpg");
+}
+#img5 {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/12/18/31/male-2634974_640.jpg");
+}
+
+.hide {
+  display: none;
+}

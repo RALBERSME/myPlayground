@@ -3,9 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cards.css" />
     <title>CARDS</title>
   </head>
   <body>
-    I am on cards html
+    <div id="overlayTop">
+      <p id="concept">
+        This is really hard stuff to come!<br /><br />The world of gambling also
+        has its dark sides.<br />
+        <em>If you are afraid of it, click on the casino button to leave.</em
+        ><br />
+        But if you are brave and ready to uncover crimes, then click start and
+        face the risk. If you cannot solve the problem you have to leave the
+        casino.<br />No entry fee! <br />
+      </p>
+      <button class="btn" id="btn1" onclick="changeScene()">
+        Click to start</button
+      ><button
+        class="btn"
+        id="btn2"
+        onclick="window.location.href='play7.html'"
+      >
+        Click to go back to casino hall.
+      </button>
+    </div>
+    <div id="overlayBottom"></div>
+    <div id="playcards">
+      <div id="card1">
+        <img
+          width="100px"
+          height="150px"
+          src="https://cdn.pixabay.com/photo/2012/04/11/14/03/hearts-28354_640.png"
+        />
+
+        <img
+          id="lipstick"
+          width="75px"
+          height="75px"
+          src="https://cdn.pixabay.com/photo/2017/11/08/22/13/kiss-2931833_640.png"
+        />
+      </div>
+      <div id="card2">
+        <img
+          width="100px"
+          height="150px"
+          src="https://cdn.pixabay.com/photo/2012/04/11/13/58/five-28339_640.png"
+        />
+        <img
+          id="lila"
+          width="75px"
+          height="75px"
+          src="https://cdn.pixabay.com/photo/2016/10/27/15/17/flower-1775377_640.png"
+        />
+      </div>
+      <div id="card3">
+        <img
+          width="100px"
+          height="150px"
+          src="https://cdn.pixabay.com/photo/2012/04/11/13/37/two-28270_1280.png"
+        />
+        <img
+          id="teddy"
+          width="75px"
+          height="75px"
+          src="https://cdn.pixabay.com/photo/2014/10/07/22/59/teddy-bear-478559_640.png"
+        />
+      </div>
+      <div id="card4">
+        <img
+          width="100px"
+          height="150px"
+          src="https://cdn.pixabay.com/photo/2012/04/11/14/03/six-28353_640.png"
+        /><img
+          id="dirt"
+          width="95px"
+          height="95px"
+          src="https://cdn.pixabay.com/photo/2016/11/17/14/24/stain-1831699_640.png"
+        />
+      </div>
+      <div id="card5">
+        <img
+          width="100px"
+          height="150px"
+          src="https://cdn.pixabay.com/photo/2012/04/11/14/02/four-28351_640.png"
+        />
+        <img
+          id="note"
+          width="55px"
+          height="55px"
+          src="https://cdn.pixabay.com/photo/2023/07/14/20/50/half-note-8127709_640.png"
+        />
+      </div>
+    </div>
+    <div class="lettersAll">
+      <p class="letters">A</p>
+      <p class="letters">B</p>
+      <p class="letters">C</p>
+      <p class="letters">D</p>
+      <p class="letters">E</p>
+    </div>
+    <div class="lettersAllSolution">
+      <p class="lettersSolution">A</p>
+      <p class="lettersSolution">B</p>
+      <p class="lettersSolution">C</p>
+      <p class="lettersSolution">D</p>
+      <p class="lettersSolution">E</p>
+    </div>
+    <div id="problem">
+      <div class="choosepic">
+        <div class="box" onclick="showInfo(1)">
+          <div
+            class="image"
+            id="img1"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+        </div>
+        <div class="box" onclick="showInfo(2)">
+          <div
+            class="image"
+            id="img2"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+        </div>
+        <div class="box" onclick="showInfo(3)">
+          <div
+            class="image"
+            id="img3"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+        </div>
+        <div class="box" onclick="showInfo(4)">
+          <div
+            class="image"
+            id="img4"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+        </div>
+        <div class="box" onclick="showInfo(5)">
+          <div
+            class="image"
+            id="img5"
+            draggable="true"
+            ondragstart="drag(event)"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <p id="details">Click on the pics and read what they told the police.</p>
+    <p id="task">
+      <b>I am proud of you. This is the problem you have to solve:</b> <br />
+      Unfortunately, many fraudsters visit our casino. We managed to catch 5 of
+      them red-handed. They all played with manipulated cards (see left). But
+      who cheated with which card? Find it out and place the respective picture
+      over the correct letter. <b>A</b> e.g. is the lipstick, etc. You can't
+      afford to make any mistakes! <u>Hint:</u> The players are pictured in the
+      order in which they sat next to each other at the gaming table.
+    </p>
+    <div id="solution">
+      <div
+        class="box userImg"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="solution1"
+      ></div>
+      <div
+        class="box userImg"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="solution2"
+      ></div>
+      <div
+        class="box userImg"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="solution3"
+      ></div>
+      <div
+        class="box userImg"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="solution4"
+      ></div>
+      <div
+        class="box userImg"
+        ondrop="drop(event)"
+        ondragover="allowDrop(event)"
+        id="solution5"
+      ></div>
+      <div class="box userImg" id="evaluateBtn" onclick="checkArrays()">
+        Click to evaluate
+      </div>
+      <div id="feedbackSolution" class="hide">
+        <u>Flora</u> created a coffee stain with her coffee cup.
+        <u>Bello (dog)</u>still had the sticky teddy from the carousel in his
+        mouth and because of the honey the teddy immediately stuck to the card.
+        <u>Jim (guitar player)</u> plucked some lilac from Flora's hair and
+        pressed it onto the card to distract from himself. <u>Flora</u> caused
+        confusion by adding a note to her card with the kaja pen.
+        <u>Gregg</u> with the checkered shirt had stolen Flora's lipstick and
+        used it to press a kiss on the card to distract from himself.
+      </div>
+    </div>
+    <div id="solutionOverlay"></div>
+    <div id="fazit" class="hide"></div>
+    <script src="cards.js"></script>
   </body>
 </html>
