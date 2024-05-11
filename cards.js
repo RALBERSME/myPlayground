@@ -84,9 +84,9 @@ ${nameArray[0]} created a coffee stain with her coffee cup.
     imageArray[4] === "img4"
   ) {
     let userCount = Number(localStorage.getItem("userCount"));
-    let userCountAfterDoublingPremium = userCount * 2;
-    localStorage.setItem("userCount", userCountAfterDoublingPremium);
-    fazit.textContent = `Everything correct. You doubled your budget. It´s now: ${userCountAfterDoublingPremium} coins`;
+    let userCountAfterAddedPremium = userCount + 5000;
+    localStorage.setItem("userCount", userCountAfterAddedPremium);
+    fazit.textContent = `Everything correct. You made 5000 coins. It´s now: ${userCountAfterAddedPremium} coins`;
     fazit.style.color = "green";
 
     setTimeout(() => {

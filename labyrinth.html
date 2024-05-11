@@ -1,11 +1,91 @@
-<!DOCTYPE html>
+s<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="labyrinth.css" />
     <title>Labyrinth</title>
   </head>
   <body>
-    this is Labyrinth html
+    <div class="rules">
+      This game costs 200 Labyrinth Coins (LC) to play. Click on one of the
+      buttons right where you expect the mouse to end. <br />Then press the
+      start button. If you are correct, you win 500 LC. If your budget get below
+      zero you have to leave the casino.
+    </div>
+    <div class="buttonsRow">
+      <span class="btn" id="back" onclick="window.location.href='play7.html'"
+        >back to casino hall</span
+      >
+      <span class="btn" id="userCount">your budget is:</span
+      ><span class="btn" id="displayUserCount"></span>
+      <span class="btn hide" id="startGame" onclick="runGame()">START</span>
+    </div>
+
+    <div class="container">
+      <div class="threeParts">
+        <div class="first">
+          <img
+            id="mouse"
+            width="50px"
+            height="75px"
+            src="https://cdn.pixabay.com/photo/2013/07/12/17/39/rat-152162_640.png"
+            alt="mouse"
+          />
+          <canvas
+            id="myCanvas"
+            width="1410"
+            height="755"
+            style="border: 1px solid #000000"
+          >
+          </canvas>
+        </div>
+        <div class="second">
+          <img
+            id="cheese1"
+            width="100px"
+            height="120px"
+            src="https://cdn.pixabay.com/photo/2014/12/21/23/34/cheese-575540_640.png"
+            alt="cheese1"
+          />
+
+          <img
+            id="soup"
+            width="100px"
+            height="120px"
+            src="https://cdn.pixabay.com/photo/2020/07/13/14/32/grilled-cheese-5400938_640.png"
+            alt="soup"
+          />
+          <img
+            id="cheese2"
+            width="100px"
+            height="120px"
+            src="https://cdn.pixabay.com/photo/2013/07/13/12/31/cheese-159788_640.png"
+            alt="cheese2"
+          />
+          <img
+            id="bread"
+            width="100px"
+            height="120px"
+            src="https://cdn.pixabay.com/photo/2023/08/19/23/38/ai-generated-8201360_640.png"
+            alt="bread"
+          /><img
+            id="tortilla"
+            width="100px"
+            height="120px"
+            src="https://cdn.pixabay.com/photo/2014/12/21/23/35/quesadilla-575610_640.png"
+            alt="tortilla"
+          />
+        </div>
+        <div class="third">
+          <p class="evaluation" id="eval1" onclick="evalClick(0)">click</p>
+          <p class="evaluation" id="eval2" onclick="evalClick(1)">click</p>
+          <p class="evaluation" id="eval3" onclick="evalClick(2)">click</p>
+          <p class="evaluation" id="eval4" onclick="evalClick(3)">click</p>
+          <p class="evaluation" id="eval5" onclick="evalClick(4)">click</p>
+        </div>
+      </div>
+    </div>
+    <script src="labyrinth.js"></script>
   </body>
 </html>
