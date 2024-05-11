@@ -31,7 +31,7 @@ function showInfo(num) {
   } else if (num === 3) {
     details.textContent = `My name is ${nameArray[2]}. I play guitar passionately. You have to concentrate like hell at the gaming table. My game neighbors are really difficult to understand. Bello is always fidgeting and Flora's eyes are hard to read under the green stuff she's wearing on her head.`;
   } else if (num === 4) {
-    details.textContent = `I'm ${nameArray[3]}. I also enjoy playing with passion. But I also want to find a rich man here. That's why I make myself look so pretty. Once I draw a playing card, I immediately reach into my handback under the table for the powder, eyeliner or lipstick and when nobody watches me I correct my make up. I want to be the most beautiful woman in the whole casino.`;
+    details.textContent = `I'm ${nameArray[3]}. I also enjoy playing with passion. But I also want to find a rich man here. That's why I make myself look so pretty. Once I draw a playing card, I immediately reach into my handback under the table for the powder, eyeliner or lipstick and when nobody watches me I correct my make up. I want to be the most beautiful in the whole casino.`;
   } else if (num === 5) {
     details.textContent = `I'm ${nameArray[4]}. I love wearing checked shirts. Nobody can see when I sweat while playing cards. Well, the most important thing when playing is to always keep an eye on your neighbors. Flora and her make-up really annoy me. She always opens and closes her handbag. Can't this just end? She's pretty, for sure...`;
   }
