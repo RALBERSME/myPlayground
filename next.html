@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Button Hover Effects</title>
+    <link rel="stylesheet" type="text/css" href="next.css" />
   </head>
   <body>
-    Next html page
+    <div class="container">
+      <a href="#" onclick="continueFn1()">
+        <p>
+          Now comes the <br /><span class="bigger">final game</span><br />
+          The aim here is to <u>save the life of a third party</u>. To do this
+          you have to be strong-willed and quick. Click this button when you're
+          ready.<br /><span class="bigger">click here</span>
+        </p>
+      </a>
+      <a href="#" onclick="continueFn2()">
+        <p>
+          Sorry, it`s enough. I would like to<br />
+          <span class="bigger">leave the playground</span><br />
+          now.<br /><span class="bigger">click here</span>
+        </p>
+      </a>
+    </div>
+    <script>
+      function continueFn1() {
+        setTimeout(() => {
+          window.location.href = "lastGame.html";
+        }, 1000);
+      }
+      function continueFn2() {
+        setTimeout(() => {
+          window.location.href = "bye.html";
+        }, 1000);
+      }
+    </script>
   </body>
 </html>
