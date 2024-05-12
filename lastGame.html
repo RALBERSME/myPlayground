@@ -3,9 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lastGame.css" />
     <title>Last Game</title>
   </head>
-  <body>
-    SAVE THE FISH
+  <body id="body">
+    <div class="half">
+      <div class="container">
+        <div class="fishBowl">
+          <div id="fishbowl" class="fishbowl">
+            <div class="pool"></div>
+            <div class="background"></div>
+            <div class="bottom"></div>
+          </div>
+          <div class="top"></div>
+          <img
+            id="fish"
+            src="Img/tropicalFish.png"
+            width="80px"
+            height="120px"
+          />
+          <div class="waterSection">
+            <div class="water">
+              <div class="water-color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="game" id="game">
+        <div class="rules">
+          As you can see, the poor fish lives in huge danger. There are cats
+          everywhere! One is already on top of the fishbowl. You have to get
+          active now.
+          <br /><br />This neighbour`s threat was successful in the past. (1.)
+          Therefore type it in less than 30 sec. without any mistake into the
+          textbox below. (2.)
+          <u class="incorrect"
+            >IMPORTANT: When you're done, click the "STOP TIME" button
+            immediately otherwise you might lose.</u
+          ><br /><br />
+          This was their story: <br />Two neighbours meet at the garden fence.
+          One says:
+          <em
+            >'What's wrong with your cat? He's been running around all the
+            gardens like crazy since lunchtime today.' </em
+          >Hit the buttom and start. The fish is rescued, if you need less than
+          1/2 minute for typing the answer that will then be shown to you!
+        </div>
+        <div class="start" id="start" onclick="startGame()">START</div>
+        <div class="showTime hide" id="showTime"></div>
+        <div class="stop hide" id="stop" onclick="stopGame()">STOP TIME</div>
+        <div
+          class="leave hide"
+          id="leave"
+          onclick="window.location.href='bye.html'"
+        >
+          LEAVE
+        </div>
+        <div class="container">
+          <div class="displayText hide" id="displayText">
+            I had him neutered today and now he is probably canceling all his
+            appointments!
+          </div>
+          <textarea id="typedText" class="typedText" autofocus></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="lastGame.js"></script>
   </body>
 </html>

@@ -1,0 +1,266 @@
+:root {
+  --filling: 100;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: grey;
+  overflow: hidden;
+  background-image: url("Img/catsAttacker.png");
+  background-position: center/cover;
+  background-repeat: repeat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+}
+.half {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  margin-left: 5%;
+}
+.fishBowl {
+  margin-top: 20%;
+  margin-left: 30%;
+  width: 100%;
+}
+.fishbowl {
+  position: relative;
+  width: 25rem;
+  height: 35rem;
+}
+.background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50% 50% 40% 40%;
+  background: linear-gradient(transparent 10%, #d8f6f7 150%);
+  border-bottom: 1px solid #d8f6f7;
+}
+.fishbowl:before {
+  content: "";
+  position: absolute;
+  bottom: 9.5rem;
+  left: 2rem;
+  width: 100%;
+  height: 30%;
+  border-radius: 50%;
+  transform: rotate(5deg);
+}
+.fishbowl:after {
+  content: "";
+  position: absolute;
+  top: 12.5%;
+  left: 2.5%;
+  width: 95%;
+  height: 85%;
+  border-radius: 55%;
+  background: linear-gradient(135deg, transparent 50%, #d8f6f7 150%);
+}
+.bottom {
+  position: absolute;
+  bottom: 4%;
+  left: 15.5%;
+  width: 65%;
+  height: 20%;
+  border-radius: 60%;
+  background: linear-gradient(#b7f4ef, #82e9be 200%);
+}
+
+.top {
+  position: absolute;
+  top: 24%;
+  left: 21%;
+  width: 15%;
+  height: 10%;
+  border-radius: 70%;
+  box-shadow: 0 2px 2px 3px rgba(255, 255, 255, 0.3);
+}
+.waterSection {
+  position: relative;
+
+  height: 100px;
+  width: 42%;
+}
+.water {
+  position: absolute;
+  top: -650%;
+  left: 0%;
+  width: 100%;
+  height: 650%;
+  border-radius: 0% 0% 40% 40%;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+.water-color {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: calc(1% * var(--filling, 90));
+  background: linear-gradient(transparent -60%, #97c8cb 350%);
+  border-radius: 20% 20% 4rem 4rem;
+  transition: height 0.5s linear;
+}
+.water-color:after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: 90%;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(transparent 0%, #37848a 250%);
+  box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0.5);
+}
+#fish {
+  position: absolute;
+  animation: fishSwim 15s 0s ease-in infinite;
+}
+
+@keyframes fishSwim {
+  0% {
+    top: 50%;
+    left: 18%;
+    transform: rotateY(0deg);
+  }
+  20% {
+    top: 50%;
+    left: 33%;
+    transform: rotateY(20deg);
+  }
+  40% {
+    top: 54%;
+    left: 33%;
+    transform: rotateY(90deg);
+  }
+  60% {
+    top: 54%;
+    left: 33%;
+    transform: rotateY(135deg);
+  }
+  80% {
+    top: 52%;
+    left: 18%;
+    transform: rotateY(135deg);
+  }
+  90% {
+    top: 52%;
+    left: 18%;
+    transform: rotateY(90deg);
+  }
+  100% {
+    top: 50%;
+    left: 18%;
+    transform: rotateY(0deg);
+  }
+}
+
+/* game */
+
+.game {
+  position: relative;
+  margin: 10%;
+  background-color: rgba(256, 256, 256, 0.8);
+  height: 50%;
+  border-radius: 5%;
+}
+
+.rules {
+  padding: 5%;
+  font-size: 1.5rem;
+  font-family: bold;
+}
+
+textarea {
+  width: 95%;
+  height: 10%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+}
+
+/*Time System*/
+.start {
+  position: absolute;
+  top: 87.5%;
+  left: 5%;
+  padding: 30px;
+  border-radius: 5%;
+  background-color: #37848a;
+  color: white;
+  cursor: pointer;
+}
+.showTime {
+  position: absolute;
+  top: 87.5%;
+  left: 25%;
+  padding: 30px;
+  border-radius: 5%;
+  font-weight: bold;
+  background-color: #37848a;
+  color: #f1da42;
+}
+.stop {
+  position: absolute;
+  top: 87.5%;
+  left: 39.5%;
+  padding: 30px;
+  border-radius: 5%;
+  background-color: #37848a;
+  color: white;
+  cursor: pointer;
+}
+.leave {
+  position: absolute;
+  top: 87.5%;
+  right: 5%;
+  padding: 30px;
+  border-radius: 5%;
+  background-color: #37848a;
+  color: white;
+  cursor: pointer;
+}
+.stop:hover,
+.start:hover,
+.leave:hover {
+  background-color: #39c2cc;
+  color: rgb(202, 231, 108);
+}
+.hide {
+  display: none;
+}
+.displayText {
+  margin-bottom: 1.25rem;
+  color: #0d191a;
+  font-weight: bold;
+  width: 80%;
+  font-style: italic;
+}
+
+.typedText {
+  background-color: transparent;
+  border: 4px solid #39c2cc;
+  outline: none;
+  width: 90%;
+  height: 8rem;
+  margin: auto;
+  resize: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: orangered;
+  text-decoration: underline;
+}
