@@ -23,8 +23,7 @@ body {
 .whiteBorder {
   margin: 3%;
   height: 95vh;
-  background: url("https://cdn.pixabay.com/photo/2016/08/23/16/23/child-1614897_640.jpg")
-    no-repeat;
+  background: url("Img/Karussel.jpg") no-repeat;
   background-size: 100% 90%;
   overflow: hidden;
 }
@@ -114,56 +113,48 @@ body {
 }
 .front {
   transform: translateZ(21vw);
-  background: url("https://cdn.pixabay.com/photo/2020/06/22/21/50/magirus-deutz-5330676_640.png")
-    no-repeat 50% 0;
+  background: url("Img/Feuerwehr.png") no-repeat 50% 0;
   background-size: cover;
 }
 
 .front2 {
   transform: translateZ(16.5vw) translateX(21.5vw) rotateY(47deg);
-  background: url("https://cdn.pixabay.com/photo/2024/04/26/20/08/octopus-8722580_640.png")
-    no-repeat 50% 0;
+  background: url("Img/octopusLila.png") no-repeat 50% 0;
   background-size: cover;
 }
 .back {
   transform: translateZ(-21vw) rotateY(180deg);
-  background: url("https://cdn.pixabay.com/photo/2024/04/30/00/18/cat-8729074_640.png")
-    no-repeat 50% 0;
+  background: url("Img/catAnzug.png") no-repeat 50% 0;
   background-size: cover;
 }
 .back2 {
   transform: translateZ(-21vw) rotateY(180deg);
   transform: translateZ(-16.5vw) translateX(-11vw) rotateY(227deg);
-  background: url("https://cdn.pixabay.com/photo/2014/09/15/21/01/teddy-bear-447422_640.png")
-    no-repeat 50% 0;
+  background: url("Img/honeybear.png") no-repeat 50% 0;
   background-size: cover;
 }
 
 .left {
   transform: translateX(-21vw) rotateY(-90deg);
-  background: url("https://cdn.pixabay.com/photo/2024/04/26/19/33/octopus-8722525_640.png")
-    no-repeat 80% 0;
+  background: url("Img/octopusPink.png") no-repeat 80% 0;
   background-size: cover;
 }
 .left2 {
   transform: translateX(-21vw) rotateY(-90deg);
   transform: translateZ(16.5vw) translateX(-11vw) rotateY(-43deg);
-  background: url("https://cdn.pixabay.com/photo/2014/12/22/00/00/pig-576570_640.png")
-    no-repeat 50% 0;
+  background: url("Img/pig.png") no-repeat 50% 0;
   background-size: cover;
 }
 
 .right {
   transform: translateX(21vw) rotateY(90deg);
-  background: url("https://cdn.pixabay.com/photo/2014/09/15/21/01/teddy-bear-447422_640.png")
-    no-repeat 50% 0;
+  background: url("Img/honeybear.png") no-repeat 50% 0;
   background-size: cover;
 }
 .right2 {
   transform: translateX(21vw) rotateY(90deg);
   transform: translateZ(-16.5vw) translateX(21.5vw) rotateY(137deg);
-  background: url("https://cdn.pixabay.com/photo/2020/01/26/14/59/kitten-4794761_640.png")
-    no-repeat 50% 0;
+  background: url("Img/kitten.png") no-repeat 50% 0;
   background-size: cover;
 }
 .top {
@@ -256,7 +247,6 @@ body {
   font-size: 1rem;
   opacity: 0;
   color: orangered;
-  /* animation: showSolution 5s 1s ease-in-out infinite;*/
 }
 
 @keyframes showSolution {

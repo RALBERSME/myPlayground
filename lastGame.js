@@ -90,7 +90,7 @@ function stopGame() {
     }, 2500);
     setTimeout(() => {
       window.location.href = "bye.html";
-    }, 6000);
+    }, 8000);
   } else {
     showTime.classList.add("hide");
     const stopped = document.getElementById("stop");
