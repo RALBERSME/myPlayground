@@ -87,10 +87,10 @@ function stopGame() {
       body.style.backgroundRepeat = "no-repeat";
       const game = document.getElementById("game");
       game.classList.add("hide");
-    }, 1000);
+    }, 2500);
     setTimeout(() => {
       window.location.href = "bye.html";
-    }, 5500);
+    }, 6000);
   } else {
     showTime.classList.add("hide");
     const stopped = document.getElementById("stop");
